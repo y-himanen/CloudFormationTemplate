@@ -4,3 +4,7 @@ Description: CloudFormation Template Practice
 Resources:
   YasmineCFBucket:
     Type: AWS::S3::Bucket
+  MyQueue:
+    Type: AWS::SQS::Queue
+    Properties:
+      QueueName: YasmineFirstQueue
