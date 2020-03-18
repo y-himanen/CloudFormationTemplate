@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d06c916-588a-47fe-9658-1c15c88e1865" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cftemplate.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cftemplate.yml" afterDir="false" />
     </list>
@@ -37,7 +36,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584523442985</updated>
-      <workItem from="1584523446430" duration="1944000" />
+      <workItem from="1584523446430" duration="4574000" />
     </task>
     <servers />
   </component>
