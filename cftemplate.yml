@@ -28,3 +28,8 @@ Resources:
         - LoadBalancerPort: '80'
           InstancePort: '80'
           Protocol: HTTP
+
+Outputs:
+  MyElasticLoadBalancerDNSName:
+    Value: !GetAtt MyElasticLoadBalancer.DNSName
+    Description: Load Balancer DNS name
