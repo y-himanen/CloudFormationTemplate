@@ -18,6 +18,8 @@ Resources:
     Properties:
       InstanceType: t2.micro
       ImageId: !Ref LatestAmiId
+      SecurityGroupIds:
+        - !Ref SGOne
   MyElasticLoadBalancer:
     Type: AWS::ElasticLoadBalancing::LoadBalancer
     Properties:
@@ -28,6 +30,18 @@ Resources:
         - LoadBalancerPort: '80'
           InstancePort: '80'
           Protocol: HTTP
+      SecurityGroups:
+        - !Ref SGTwo
+  SGOne:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      VpcId: vpc-081c6760
+      GroupDescription: Security group for EC2 instance.
+  SGTwo:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      VpcId: vpc-081c6760
+      GroupDescription: Security group for load balancer.
 
 Outputs:
   MyElasticLoadBalancerDNSName:
