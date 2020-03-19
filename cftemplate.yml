@@ -37,6 +37,11 @@ Resources:
     Properties:
       VpcId: vpc-081c6760
       GroupDescription: Security group for EC2 instance.
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: '80'
+          ToPort: '80'
+          SourceSecurityGroupId: !Ref SGTwo
   SGTwo:
     Type: AWS::EC2::SecurityGroup
     Properties:
